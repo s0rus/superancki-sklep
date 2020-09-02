@@ -1,0 +1,66 @@
+$background-primary: #12d1cf;
+$background-secondary: #05bab8;
+$font-primary: #011514;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $font-primary;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: $background-primary;
+}
+
+.main-header {
+  width: 100vw;
+  background-color: $background-secondary;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2em;
+
+  .logo {
+    img {
+      width: 20em;
+    }
+  }
+
+  .search-form {
+    display: flex;
+    position: relative;
+
+    .search-input {
+      padding: 0.5em 2em;
+      outline: none;
+      border: 1px solid $font-primary;
+      border-radius: 5px;
+      width: 20em;
+    }
+
+    .search-label {
+      position: absolute;
+      top: 10%;
+      left: 0.2em;
+    }
+  }
+
+  .main-header-nav-options {
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: 1em;
+    }
+  }
+}
