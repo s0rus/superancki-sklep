@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>superanckisklep</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body>
     <header class="main-header">
-        <!--    <form class="search-form">
-            <label class="search-label" for="search-input">
-                <img class="search-svg" src="./svgs/search-24px.svg" alt="search-icon">
-            </label>
-            <input type="text" name="search-term" class="search-input" id="search-input" placeholder="szukaj...">
-        </form> -->
         <section class="logo">
-            <img src="./svgs/superancki-sklep.svg" alt="superancki-sklep-logo">
+            <a href="index.html"><img class="logo-svg" src="./svgs/ss-logo.svg" alt="superanckisklep"></a>
+            <h1 class="logo-title">superanckisklep</h1>
         </section>
         <nav class="main-header-nav">
-            <ul class="main-header-nav-options">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="koszyk.php">KOSZYK</a></li>
-                <li><a href="login.php">LOGOWANIE</a></li>
-            </ul>
+            <button class="hamburger">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="option-wrapper">
+                <ul class="nav-options">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sklep.html">SKLEP</a></li>
+                    <li><a href="koszyk.php">KOSZYK</a></li>
+                    <li><a href="login.php">LOGOWANIE</a></li>
+                </ul>
+            </div>
         </nav>
 
     </header>
-    <script src="../scripts/search-bar.js"></script>
+    <script src="../scripts/header.js"></script>
 </body>
 
 </html>
