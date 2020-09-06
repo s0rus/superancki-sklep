@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="50" viewBox="0 0 250 50">
+  <defs>
+    <clipPath id="clip-projects-arrow">
+      <rect width="250" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="projects-arrow" clip-path="url(#clip-projects-arrow)">
+    <text id="Dziesiątki_projektów" data-name="Dziesiątki projektów" transform="translate(0 19)" fill="#b86bff" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Dziesiątki projektów</tspan></text>
+    <path id="Path_1" data-name="Path 1" d="M188.737,12s34.815-8.374,34.184,27.778" transform="matrix(0.819, 0.574, -0.574, 0.819, 33.356, -115.382)" fill="none" stroke="#b86bff" stroke-linecap="round" stroke-width="3"/>
+    <path id="Path_2" data-name="Path 2" d="M216.292,37.706s-1.538,17.556,12.638,4.765" transform="translate(-19.089 -30.434) rotate(8)" fill="none" stroke="#b86bff" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
