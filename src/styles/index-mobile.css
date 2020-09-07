@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+  .languages img {
+    width: 10%;
+  }
+  .languages-text {
+    padding: 0 0.5em;
+    z-index: 1;
+    font-size: 1.4em;
+    text-align: justify;
+  }
+  .index-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .index-article img {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    padding-bottom: 2em;
+  }
+  .index-article .article-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .quotes-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quotes-article img {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 80%;
+    padding-top: 6em;
+  }
+  .quotes-article .article-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .projects-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 4em;
+  }
+  .projects-article .projects-text {
+    padding: 2em;
+  }
+  .projects-article .projects-image {
+    padding: 1em;
+  }
+  .projects-article .projects-image img {
+    max-width: 100%;
+    min-width: 80%;
+  }
+  .contact-article {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.7em;
+  }
+  .contact-article .contact-form {
+    padding: 2em;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+  }
+  .contact-article .contact-form div {
+    text-align: left;
+    padding: 1em 4em;
+    position: relative;
+  }
+  .contact-article .contact-form div .contact-email {
+    position: unset;
+  }
+  .contact-article .contact-form div .contact-email::before {
+    content: "";
+    background-color: #b86bff;
+    width: 10%;
+    height: 10px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+  .contact-article .contact-form div .contact-message {
+    position: unset;
+  }
+  .contact-article .contact-form div .contact-message::before {
+    content: "";
+    background-color: #b86bff;
+    width: 10%;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+  input,
+  textarea {
+    width: 100%;
+    background-color: #16161d;
+    border-radius: 5px;
+    border: 2px solid #b86bff;
+    color: #ebebeb;
+    padding: 1em;
+  }
+}
+/*# sourceMappingURL=index-mobile.css.map */

@@ -1,37 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>superanckisklep</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="svgs/ss-logo.svg">
-    <link rel="stylesheet" href="../styles/index.css">
-</head>
-
-<body>
-    <header class="main-header">
-        <section class="logo">
-            <a href="index.html"><img class="logo-svg" src="./svgs/ss-logo.svg" alt="superanckisklep"></a>
-            <h1 class="logo-title">superanckisklep</h1>
-        </section>
-        <nav class="main-header-nav">
-            <button class="hamburger">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <div class="option-wrapper">
-                <ul class="nav-options">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="sklep.html">SKLEP</a></li>
-                    <li><a href="koszyk.php">KOSZYK</a></li>
-                    <li><a href="login.php">LOGOWANIE</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
     <article class="index-article">
         <div class="article-text">
@@ -45,13 +11,13 @@
             </p>
             <a href="sklep.html"><button class="button-link"><span>SPRAWDŹ</span></button></a>
         </div>
-        <img src="./svgs/add-to-cart.svg" alt="cart-svg">
+        <img src="../src/svgs/add-to-cart.svg" alt="cart-svg">
     </article>
     <article class="languages-article">
         <section class="languages">
-            <img src="./images/html-logo.png" alt="html-logo">
-            <img src="./images/js-logo.png" alt="js-logo">
-            <img src="./images/css-logo.png" alt="css-logo">
+            <img src="../src/images/html-logo.png" alt="html-logo">
+            <img src="../src/images/js-logo.png" alt="js-logo">
+            <img src="../src/images/css-logo.png" alt="css-logo">
         </section>
         <section class="languages-text">
             <h1>
@@ -70,7 +36,7 @@
     </article>
     <article class="projects-article">
         <div class="projects-image">
-            <img src="./images/projects.png" alt="projects">
+            <img src="../src/images/projects.png" alt="projects">
         </div>
         <section class="projects-text">
             <h1>Nasza biblioteka projektów jest naprawdę wielka!</h1>
@@ -83,7 +49,7 @@
         <div class="quote-wrapper">
             <h1 class="quote">"Sprawdzian stał się banalnie prosty." ~ Tomasz K.</h1>
         </div>
-        <img src="./svgs/quotes.svg" alt="quotes-svg">
+        <img src="../src/svgs/quotes.svg" alt="quotes-svg">
     </article>
     <section class="contact-wrapper">
         <h1>Skontaktuj się z nami!</h1>
@@ -108,18 +74,3 @@
             </form>
         </article>
     </section>
-    <footer class="footer">
-        <div class=footer-logo>
-            <img src="./svgs/ss-logo.svg" alt="ss-logo">
-            <h1>superanckisklep</h1>
-        </div>
-        <div>
-            <h1>RATUJEMY UCZNIÓW OD 2017</h1>
-            <p>SUPERANCKISKLEP &copy; 2017 - 2020 ALL RIGHTS RESERVED</p>
-        </div>
-    </footer>
-
-    <script src="../scripts/header.js"></script>
-</body>
-
-</html>

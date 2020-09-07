@@ -1,0 +1,129 @@
+$background-primary: #16161d;
+$background-secondary: #15151c;
+$background-shadow: #131319;
+$font-primary: #ebebeb;
+$font-secondary: #b86bff;
+
+@media (max-width: 768px) {
+  .languages {
+    img {
+      width: 10%;
+    }
+  }
+
+  .languages-text {
+    padding: 0 0.5em;
+    z-index: 1;
+    font-size: 1.4em;
+    text-align: justify;
+  }
+
+  .index-article {
+    flex-direction: column;
+
+    img {
+      order: 0;
+      width: 100%;
+      padding-bottom: 2em;
+    }
+
+    .article-text {
+      order: 1;
+    }
+  }
+
+  .quotes-article {
+    flex-direction: column;
+
+    img {
+      order: 0;
+      width: 80%;
+      padding-top: 6em;
+    }
+
+    .article-text {
+      order: 1;
+    }
+  }
+
+  .projects-article {
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 4em;
+
+    .projects-text {
+      padding: 2em;
+    }
+
+    .projects-image {
+      //background-color: red;
+      padding: 1em;
+
+      img {
+        max-width: 100%;
+        min-width: 80%;
+      }
+    }
+  }
+
+  .contact-article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+
+    .contact-form {
+      padding: 2em;
+      border: 0;
+      box-shadow: none;
+      background-color: transparent;
+
+      div {
+        text-align: left;
+        padding: 1em 4em;
+        position: relative;
+
+        .contact-email {
+          position: unset;
+
+          &::before {
+            content: "";
+            background-color: $font-secondary;
+            width: 10%;
+            height: 10px;
+            position: absolute;
+            top: 20%;
+            left: 0%;
+          }
+        }
+
+        .contact-message {
+          position: unset;
+
+          &::before {
+            content: "";
+            background-color: $font-secondary;
+            width: 10%;
+            height: 40px;
+            position: absolute;
+            top: 20%;
+            left: 0%;
+          }
+        }
+      }
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: $background-primary;
+    border-radius: 5px;
+    border: 2px solid $font-secondary;
+    color: $font-primary;
+    padding: 1em;
+  }
+}
