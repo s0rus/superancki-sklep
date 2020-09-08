@@ -145,7 +145,7 @@ body {
 }
 
 .option-wrapper .nav-options li {
-  padding: 0 0.6em;
+  padding: 0 0.3em;
   font-size: 1.2em;
 }
 
@@ -180,7 +180,7 @@ body {
 }
 
 .button-link {
-  padding: 1em 1.4em;
+  padding: 1em 1.5em;
   background-color: #ebebeb;
   color: #b86bff;
   position: relative;
@@ -235,6 +235,31 @@ textarea {
   color: #ebebeb;
   padding: 2em 1em 1em 1em;
   resize: none;
+}
+
+.nav-svg {
+  color: #ebebeb;
+  padding: 0.5em;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #131319;
+}
+
+.nav-svg:hover {
+  background-color: #b86bff;
+}
+
+.nav-link {
+  color: #ebebeb;
+  border-radius: 5px;
+  padding: 0.35em;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #b86bff;
 }
 
 @media (max-width: 768px) {

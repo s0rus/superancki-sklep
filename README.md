@@ -4,7 +4,7 @@
 
 ## FRONT
 
-- [ ] Strona główna
+- ~~[X] Strona główna~~
 - [ ] Kategorie - widok danej kategorii (w postaci listy lub kafelków, można stosować zmiany widoku)
 - [ ] Widok produktu - zdjęcie/slider, Nazwa, cena, opis, ilość dostępnych sztuk na magazynie, ewentualnie opinie (nie są konieczne)
 - [ ] Koszyk - lista produktów, możliwość usunięcia produktu oraz zmiany ilości -> przeliczanie koszyka
