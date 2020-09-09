@@ -22,3 +22,6 @@ Znajomość zastosowanych metod oraz kodu aplikacji KONIECZNA.
 - [ ] Imię, nazwisko + tytuł
 - [ ] Funkcjonalności + opis zastosowanych klas, metod
 - [ ] Opis zastosowanych widoków
+
+## PROJEKT BAZY 
+https://www.figma.com/file/wC1OrAflni9tf8cCaPUZ37/PROJEKT-BAZY-SUPERANCKISKLEP?node-id=1%3A44
