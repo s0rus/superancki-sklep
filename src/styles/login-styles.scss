@@ -1,0 +1,106 @@
+$background-primary: #16161d;
+$background-secondary: #15151c;
+$background-shadow: #131319;
+$font-primary: #ebebeb;
+$font-secondary: #b86bff;
+
+.login-article {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 35vw;
+  }
+
+  form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    div {
+      position: relative;
+      label {
+        color: $font-secondary;
+      }
+
+      .login-label {
+        position: absolute;
+        top: 42px;
+        left: 27px;
+      }
+
+      .password-label {
+        position: absolute;
+        top: 42px;
+        left: 27px;
+      }
+    }
+
+    input,
+    button,
+    h1 {
+      margin: 1em;
+    }
+
+    input {
+      width: 30vw;
+    }
+  }
+}
+
+.login-waves {
+  width: 100%;
+  height: 100%;
+
+  background-color: red;
+  background-image: url("../svgs/waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .login-article {
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      margin: 0 auto;
+      width: 50vw;
+    }
+
+    form {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        margin: 1.5em auto 0em auto;
+      }
+
+      button {
+        margin: 1.5em auto 0em auto;
+      }
+
+      div {
+        width: 100%;
+        padding: 0em 6em 0em 4em;
+        input {
+          width: 100%;
+        }
+
+        .login-label {
+          position: absolute;
+          top: 45px;
+          left: 93px;
+        }
+
+        .password-label {
+          position: absolute;
+          top: 45px;
+          left: 93px;
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,11 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  width: 100vw;
+  height: 100%;
+}
+
 .main-header {
   width: 100vw;
   height: 8vh;
@@ -260,6 +265,56 @@ textarea {
 
 .nav-link:hover {
   background-color: #b86bff;
+}
+
+.error-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #131319;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  padding: 1em;
+}
+
+.error-wrapper p {
+  padding: 0.1em;
+  font-size: 2vw;
+}
+
+.error-wrapper .error-svg {
+  width: 4vw;
+  height: 4vw;
+}
+
+.error-wrapper::before {
+  content: "";
+  background-color: #b86bff;
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 1;
+}
+
+.error-wrapper::after {
+  content: "";
+  background-color: #b86bff;
+  width: 20vw;
+  height: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

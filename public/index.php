@@ -1,3 +1,10 @@
+<?php
+
+    require_once '../src/classes/ThrowError.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,11 +21,13 @@
 
 <body>
 
-    <?php 
-        require_once '../src/components/navbar.php';
-        require_once '../src/components/index-articles.php';
-        require_once '../src/components/footer.php';
-    ?>
+    <div class="wrapper">
+        <?php
+            require_once '../src/components/navbar.php';
+            require_once '../src/components/index-articles.php';
+            require_once '../src/components/footer.php';
+        ?>
+    </div>
 
     <script src="../src/scripts/index.js"></script>
 </body>
