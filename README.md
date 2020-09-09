@@ -25,3 +25,6 @@ Znajomość zastosowanych metod oraz kodu aplikacji KONIECZNA.
 
 ## PROJEKT BAZY 
 https://www.figma.com/file/wC1OrAflni9tf8cCaPUZ37/PROJEKT-BAZY-SUPERANCKISKLEP?node-id=1%3A44
+
+## TESTY
+https://pastebin.pl/view/61c8b5ac
