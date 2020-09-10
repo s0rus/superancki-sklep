@@ -31,7 +31,7 @@
             <br>
             <p>Jeśli będziesz miał jakieś pytania, chętnie na nie odpowiemy!</p>
             <br>
-            <a href="login.html"><button class="button-link"><span>ZALOGUJ SIĘ</span></button></a>
+            <a href="login.php"><button class="button-link"><span>ZALOGUJ SIĘ</span></button></a>
         </section>
     </article>
     <article class="projects-article">
@@ -42,7 +42,7 @@
             <h1>Nasza biblioteka projektów jest naprawdę wielka!</h1>
             <br>
             <p class="styled-p">To tylko wycinek naszych możliwości.</p>
-            <a href="sklep.html"><button class="button-link"><span>SPRAWDŹ</span></button></a>
+            <a href="sklep.php"><button class="button-link"><span>SPRAWDŹ</span></button></a>
         </section>
     </article>
     <article class="quotes-article">

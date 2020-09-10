@@ -7,6 +7,32 @@ $font-secondary: #b86bff;
 .login-article {
   display: flex;
   justify-content: space-around;
+  background-image: url("../svgs/waves2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  position: relative;
+  height: 100%;
+
+  &::before {
+    content: "";
+    background-color: $font-secondary;
+    width: 2vw;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    background-color: $font-secondary;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+  }
 
   img {
     width: 35vw;
@@ -18,6 +44,16 @@ $font-secondary: #b86bff;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    &::after {
+      content: "";
+      background-color: $font-secondary;
+      width: 20vw;
+      height: 1vh;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+    }
 
     div {
       position: relative;
@@ -39,9 +75,12 @@ $font-secondary: #b86bff;
     }
 
     input,
-    button,
-    h1 {
+    button {
       margin: 1em;
+    }
+
+    h1 {
+      margin-left: 0.6em;
     }
 
     input {
@@ -50,20 +89,29 @@ $font-secondary: #b86bff;
   }
 }
 
-.login-waves {
-  width: 100%;
-  height: 100%;
+.terms {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-  background-color: red;
-  background-image: url("../svgs/waves.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  p {
+    text-align: left;
+    flex: 10;
+    margin-left: -1em;
+
+    line-height: 1em;
+  }
+
+  input {
+    flex: 1;
+  }
 }
 
 @media (max-width: 768px) {
   .login-article {
     flex-direction: column;
     justify-content: center;
+    padding: 0em;
 
     img {
       margin: 0 auto;
@@ -101,6 +149,24 @@ $font-secondary: #b86bff;
           left: 93px;
         }
       }
+    }
+  }
+
+  .terms {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      text-align: left;
+      flex: 10;
+      margin-left: 0em;
+
+      line-height: 1em;
+    }
+
+    input {
+      flex: 1;
     }
   }
 }

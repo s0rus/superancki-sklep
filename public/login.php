@@ -14,14 +14,12 @@
     <title>superanckisklep - logowanie</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <link rel="icon" href="../src/svgs/ss-logo.svg">
-    <link rel="stylesheet" href="../src/styles/index.css">
-    <link rel="stylesheet" href="../src/styles/index-mobile.css">
     <link rel="stylesheet" href="../src/styles/global-styles.css">
     <link rel="stylesheet" href="../src/styles/login-styles.css">
 
 </head>
 
-<body>
+<body style="background-color: #131319">
     <?php require_once '../src/components/navbar.php' ?>
     <div class="wrapper">
         <article class="login-article">
@@ -35,6 +33,10 @@
                 <div>
                     <label class="password-label" for="password">HASŁO</label><br>
                     <input type="password" name="password" id="password">
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms">
+                    <p>Zgadzam się na regulamin, którego nie ma.</p>
                 </div>
                 <button class="button-link login-button"><span>ZALOGUJ SIĘ</span></button>
             </form>

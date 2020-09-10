@@ -1,6 +1,6 @@
 <header class="main-header">
     <section class="logo">
-        <a href="index.html"><img class="logo-svg" src="../src/svgs/ss-logo.svg" alt="superanckisklep"></a>
+        <a href="index.php"><img class="logo-svg" src="../src/svgs/ss-logo.svg" alt="superanckisklep"></a>
         <h1 class="logo-title">superanckisklep</h1>
     </section>
     <nav class="main-header-nav">
