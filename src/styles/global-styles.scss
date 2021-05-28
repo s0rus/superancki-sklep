@@ -16,6 +16,10 @@ html {
   overflow-x: hidden;
 }
 
+.page-locked {
+  overflow-y: hidden;
+}
+
 a {
   text-decoration: none;
   color: $font-primary;
@@ -179,6 +183,14 @@ body {
   position: relative;
 }
 
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
 .button-link::before {
   content: "";
   position: absolute;
@@ -215,6 +227,14 @@ textarea {
   resize: none;
 }
 
+select {
+  background-color: $background-shadow;
+  border-radius: 5px;
+  border: 2px solid $font-secondary;
+  color: $font-primary;
+  padding: 0.75em;
+}
+
 .nav-svg {
   color: $font-primary;
   padding: 0.5em;
@@ -236,13 +256,29 @@ textarea {
   }
 }
 
+.cart-icon {
+  position: relative;
+  margin: 0 0.6em;
+
+  span {
+    position: absolute;
+    top: -150%;
+    left: 80%;
+    background-color: $font-secondary;
+    border-radius: 5px;
+    padding: 0.2em 1em;
+    font-size: 0.5em;
+    z-index: -1;
+  }
+}
+
 .error-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $background-shadow;
   width: 80%;
-  margin: 0 auto;
+  margin: 2em auto;
   border-radius: 5px;
   position: relative;
   padding: 1em;
@@ -257,6 +293,12 @@ textarea {
     height: 4vw;
   }
 
+  .success-svg {
+    width: 4vw;
+    height: 4vw;
+    color: $font-secondary;
+  }
+
   &::before {
     content: "";
     background-color: $font-secondary;
@@ -265,7 +307,7 @@ textarea {
     position: absolute;
     top: 50%;
     left: 20%;
-    z-index: 1;
+    z-index: -1;
   }
 
   &::after {
@@ -276,7 +318,7 @@ textarea {
     position: absolute;
     top: 50%;
     left: 80%;
-    z-index: 1;
+    z-index: -1;
   }
 }
 

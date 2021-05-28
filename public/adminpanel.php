@@ -6,13 +6,22 @@ require_once '../src/classes/ThrowError.php';
 require_once '../src/classes/GetCategories.php';
 require_once '../src/classes/GetProducts.php';
 require_once '../src/classes/GetCart.php';
+require_once '../src/classes/GetLogin.php';
 
 $DB = new GetDatabase();
 $CONNECTION = $DB->connect();
 $CART = new GetCart($CONNECTION);
+$USER = new GetLogin($CONNECTION);
+
 
 if(isset($_SESSION['USER_ID'])){
     $uid = $_SESSION['USER_ID'];
+} else {
+    header('Location: login.php');
+}
+
+if(!$_SESSION['IS_ADMIN']){
+    header('Location: index.php');
 }
 
 ?>
@@ -29,6 +38,9 @@ if(isset($_SESSION['USER_ID'])){
     <link rel="stylesheet" href="../src/styles/index.css">
     <link rel="stylesheet" href="../src/styles/index-mobile.css">
     <link rel="stylesheet" href="../src/styles/global-styles.css">
+    <link rel="stylesheet" href="../src/styles/user-styles.css">
+    <link rel="stylesheet" href="../src/styles/login-styles.css">
+    <link rel="stylesheet" href="../src/styles/products-styles.css">
 </head>
 
 <body>
@@ -36,7 +48,7 @@ if(isset($_SESSION['USER_ID'])){
     <div class="wrapper">
         <?php
             require_once '../src/components/navbar.php';
-            require_once '../src/components/index-articles.php';
+            require_once '../src/components/admin-panel-view.php';
             require_once '../src/components/footer.php';
         ?>
     </div>

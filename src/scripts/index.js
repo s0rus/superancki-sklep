@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const options = document.querySelector('.option-wrapper');
+const page = document.querySelector('html');
 
 const quoteEl = document.querySelector('.quote');
 
@@ -11,11 +12,15 @@ const setQuote = () => {
     quoteCounter >= 1 ? quoteCounter = 0 : quoteCounter++;
 };
 
-setInterval(setQuote, 6000);
+if (quoteEl) {
+    setInterval(setQuote, 6000);
+}
+
 
 const handleClick = () => {
     hamburger.classList.toggle('hamburger--active');
     options.classList.toggle('menu-active');
+    page.classList.toggle('page-locked');
 }
 
 

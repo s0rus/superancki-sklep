@@ -9,7 +9,7 @@
                 <br>
                 Jesteśmy bardzo zgranym zespołem, który napewno pomoże Ci z projektem do szkoły.
             </p>
-            <a href="sklep.html"><button class="button-link"><span>SPRAWDŹ</span></button></a>
+            <a href="products.php"><button class="button-link"><span>SPRAWDŹ</span></button></a>
         </div>
         <img src="../src/svgs/add-to-cart.svg" alt="cart-svg">
     </article>
@@ -42,7 +42,7 @@
             <h1>Nasza biblioteka projektów jest naprawdę wielka!</h1>
             <br>
             <p class="styled-p">To tylko wycinek naszych możliwości.</p>
-            <a href="sklep.php"><button class="button-link"><span>SPRAWDŹ</span></button></a>
+            <a href="products.php"><button class="button-link"><span>SPRAWDŹ</span></button></a>
         </section>
     </article>
     <article class="quotes-article">

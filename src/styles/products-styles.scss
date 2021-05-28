@@ -1,0 +1,274 @@
+$background-primary: #16161d;
+$background-secondary: #15151c;
+$background-shadow: #131319;
+$font-primary: #ebebeb;
+$font-secondary: #b86bff;
+
+.products-wrapper {
+  padding-left: 16vw;
+  padding-bottom: 10em;
+  margin-bottom: 5em;
+  background-image: url("http://localhost/superancki-sklep/src/svgs/background.svg");
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $font-primary;
+  padding-bottom: 1em;
+}
+
+.content-wrapper {
+  border-top: 1px solid #ebebeb;
+  margin-top: 1em;
+  width: 67vw;
+}
+
+.category {
+  background-color: $background-secondary;
+  padding: 0.5em 2em;
+  margin-right: 1em;
+  margin-top: 1em;
+  border-radius: 5px;
+  border: 1px solid $font-primary;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: $background-shadow;
+    border-color: $font-secondary;
+    color: $font-secondary;
+  }
+}
+
+.info-inner {
+  background-color: $font-secondary;
+  color: $font-primary;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.2em 0.5em;
+  margin-right: 0.5em;
+}
+
+.styled-p {
+  margin-top: 1em;
+}
+
+.products-list {
+  margin-top: 2em;
+}
+
+.product {
+  background-color: $background-secondary;
+  border: 1px solid $font-primary;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 2em;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: $background-shadow;
+    border-color: $font-secondary;
+    color: $font-secondary;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.product-view-wrapper {
+  display: flex;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: $background-secondary;
+  border-radius: 5px;
+  border: 1px solid $font-primary;
+}
+
+.product-info {
+  margin-top: 1em;
+  width: 60%;
+  text-align: justify;
+}
+
+.product-image {
+  background-color: red;
+  width: 40%;
+}
+
+.blank-cart {
+  margin: 4em auto;
+  display: flex;
+  justify-content: center;
+  font-size: 3.5vw;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: $font-secondary;
+    width: 20vw;
+    height: 5vw;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    z-index: -1;
+  }
+}
+
+.product-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .product-info {
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.cart-info-wrapper {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inner-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.goto-checkout-wrapper {
+  display: flex;
+  margin-top: 2em;
+  border-top: 1px solid $font-primary;
+  justify-content: flex-end;
+
+  div {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .button-link {
+    margin-top: 1em;
+  }
+}
+
+.checkout-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+
+  ul {
+    list-style-type: none;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .checkout-list-wrapper {
+    flex: 0.5;
+    border-right: 1px solid $font-primary;
+  }
+}
+
+.checkout-form {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    div {
+      position: relative;
+      label {
+        color: $font-secondary;
+      }
+
+      .login-label {
+        position: absolute;
+        top: 30px;
+        left: 27px;
+      }
+    }
+
+    input,
+    button,
+    .payment-select {
+      margin: 0em 1em;
+    }
+
+    .payment-select {
+      padding-top: 2em;
+      width: 20vw;
+    }
+
+    input {
+      width: 20vw;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-view-wrapper {
+    flex-direction: column;
+  }
+
+  .product-info {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .product-title {
+    font-size: 1em;
+  }
+
+  .checkout-wrapper {
+    flex-direction: column;
+
+    .checkout-list-wrapper {
+      border-bottom: 1px solid $font-primary;
+      border-right: none;
+    }
+
+    .checkout-user-info-wrapper {
+      margin-top: 2em;
+    }
+  }
+
+  .checkout-form {
+    form {
+      input {
+        width: 55vw;
+      }
+
+      .payment-select {
+        width: 55vw;
+      }
+    }
+  }
+
+  .product-info-wrapper {
+    flex-direction: column;
+
+    .product-info {
+      flex-direction: column;
+
+      .info-inner {
+        margin-bottom: 0.5em;
+        width: 100%;
+      }
+    }
+  }
+}

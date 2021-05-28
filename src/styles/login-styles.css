@@ -18,8 +18,9 @@
   width: 2vw;
   height: 50%;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 0;
+  z-index: -1;
 }
 
 .login-article::after {
@@ -28,8 +29,9 @@
   width: 4vw;
   height: 4vw;
   position: absolute;
-  top: 10%;
+  top: 24%;
   left: 80%;
+  z-index: -1;
 }
 
 .login-article img {
@@ -53,16 +55,6 @@
           align-items: flex-start;
 }
 
-.login-article form::after {
-  content: "";
-  background-color: #b86bff;
-  width: 20vw;
-  height: 1vh;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-}
-
 .login-article form div {
   position: relative;
 }
@@ -71,29 +63,41 @@
   color: #b86bff;
 }
 
-.login-article form div .login-label {
-  position: absolute;
-  top: 42px;
-  left: 27px;
+.login-article form div .error-tag {
+  color: red;
+  margin-left: 1em;
 }
 
-.login-article form div .password-label {
+.login-article form div .login-label {
   position: absolute;
-  top: 42px;
+  top: 30px;
   left: 27px;
 }
 
 .login-article form input,
-.login-article form button {
-  margin: 1em;
+.login-article form button,
+.login-article form select {
+  margin: 0em 1em;
+  outline: none;
+}
+
+.login-article form select {
+  padding-top: 2em;
 }
 
 .login-article form h1 {
   margin-left: 0.6em;
 }
 
-.login-article form input {
+.login-article form input,
+.login-article form select,
+.login-article form textarea {
   width: 30vw;
+}
+
+.product-desc {
+  margin-left: 1em;
+  height: 8em;
 }
 
 .terms {
@@ -123,7 +127,33 @@
           flex: 1;
 }
 
-@media (max-width: 768px) {
+.valid-input {
+  border-color: #08b140;
+}
+
+.invalid-input {
+  border-color: #ca1515;
+}
+
+.product-edit-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.product-edit-inputs input {
+  margin: 0;
+}
+
+.product-form textarea {
+  height: 9.45em;
+}
+
+@media (max-width: 1200px) {
   .login-article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -152,18 +182,36 @@
     width: 100%;
     padding: 0em 6em 0em 4em;
   }
-  .login-article form div input {
+  .login-article form div input,
+  .login-article form div select,
+  .login-article form div textarea {
     width: 100%;
   }
   .login-article form div .login-label {
     position: absolute;
-    top: 45px;
+    top: 30px;
     left: 93px;
   }
-  .login-article form div .password-label {
+  .login-article .product-form div,
+  .login-article .product-add-form div {
+    width: 100%;
+    padding: 0;
+  }
+  .login-article .product-form textarea,
+  .login-article .product-add-form textarea {
+    height: 15em;
+  }
+  .login-article .product-form .login-label,
+  .login-article .product-add-form .login-label {
     position: absolute;
-    top: 45px;
-    left: 93px;
+    top: 30px;
+    left: 28px;
+  }
+  .product-edit-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .terms {
     display: -webkit-box;

@@ -3,6 +3,8 @@ $background-secondary: #15151c;
 $background-shadow: #131319;
 $font-primary: #ebebeb;
 $font-secondary: #b86bff;
+$invalid: rgb(202, 21, 21);
+$valid: rgb(8, 177, 64);
 
 .login-article {
   display: flex;
@@ -10,6 +12,7 @@ $font-secondary: #b86bff;
   background-image: url("../svgs/waves2.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
   padding: 1em;
   position: relative;
   height: 100%;
@@ -20,8 +23,9 @@ $font-secondary: #b86bff;
     width: 2vw;
     height: 50%;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 0;
+    z-index: -1;
   }
 
   &::after {
@@ -30,8 +34,9 @@ $font-secondary: #b86bff;
     width: 4vw;
     height: 4vw;
     position: absolute;
-    top: 10%;
+    top: 24%;
     left: 80%;
+    z-index: -1;
   }
 
   img {
@@ -45,48 +50,50 @@ $font-secondary: #b86bff;
     justify-content: center;
     align-items: flex-start;
 
-    &::after {
-      content: "";
-      background-color: $font-secondary;
-      width: 20vw;
-      height: 1vh;
-      position: absolute;
-      top: 90%;
-      left: 50%;
-    }
-
     div {
       position: relative;
       label {
         color: $font-secondary;
       }
 
-      .login-label {
-        position: absolute;
-        top: 42px;
-        left: 27px;
+      .error-tag {
+        color: red;
+        margin-left: 1em;
       }
 
-      .password-label {
+      .login-label {
         position: absolute;
-        top: 42px;
+        top: 30px;
         left: 27px;
       }
     }
 
     input,
-    button {
-      margin: 1em;
+    button,
+    select {
+      margin: 0em 1em;
+      outline: none;
+    }
+
+    select {
+      padding-top: 2em;
     }
 
     h1 {
       margin-left: 0.6em;
     }
 
-    input {
+    input,
+    select,
+    textarea {
       width: 30vw;
     }
   }
+}
+
+.product-desc {
+  margin-left: 1em;
+  height: 8em;
 }
 
 .terms {
@@ -107,7 +114,30 @@ $font-secondary: #b86bff;
   }
 }
 
-@media (max-width: 768px) {
+.valid-input {
+  border-color: $valid;
+}
+
+.invalid-input {
+  border-color: $invalid;
+}
+
+.product-edit-inputs {
+  display: flex;
+  flex-direction: row;
+
+  input {
+    margin: 0;
+  }
+}
+
+.product-form {
+  textarea {
+    height: 9.45em;
+  }
+}
+
+@media (max-width: 1200px) {
   .login-article {
     flex-direction: column;
     justify-content: center;
@@ -133,23 +163,41 @@ $font-secondary: #b86bff;
       div {
         width: 100%;
         padding: 0em 6em 0em 4em;
-        input {
+        input,
+        select,
+        textarea {
           width: 100%;
         }
 
         .login-label {
           position: absolute;
-          top: 45px;
-          left: 93px;
-        }
-
-        .password-label {
-          position: absolute;
-          top: 45px;
+          top: 30px;
           left: 93px;
         }
       }
     }
+
+    .product-form,
+    .product-add-form {
+      div {
+        width: 100%;
+        padding: 0;
+      }
+
+      textarea {
+        height: 15em;
+      }
+
+      .login-label {
+        position: absolute;
+        top: 30px;
+        left: 28px;
+      }
+    }
+  }
+
+  .product-edit-inputs {
+    flex-direction: column;
   }
 
   .terms {
